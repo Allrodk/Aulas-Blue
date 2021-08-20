@@ -1,5 +1,5 @@
 const notas = [100,50,10,5,1]
-const valor = parseInt(prompt('Valor de saque de R$10 a R$600,00'));
+const valor = parseInt(prompt('Valor de saque de R$10,00 à R$600,00'));
 let qtdeNotas = []
 let valorRestante = valor;
 
