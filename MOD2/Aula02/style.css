@@ -1,0 +1,14 @@
+p {
+  color: red;
+}
+h1 {
+  color: blue;
+}
+section {
+  border: 1px solid black;
+  background: lightblue;
+}
+article {
+  border: 1px solid red;
+  background: lightgrey;
+}

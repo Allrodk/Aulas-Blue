@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <button onclick="sec1()">Sessão 1</button> 
+            <button onclick="sec2()">Sessão 2</button> 
+        </nav>
+        <section id="primeiro">
+            <section id="nome">
+                <input id="inputNome" type="text" placeholder="Digite seu nome">
+            </section>
+            <section id="resultado">
+                <span id="spanResultado">Nome</span>
+            </section>
+            <button onclick="nome()">Enviar</button>  
+        </section> 
+        <section id="segundo">
+            <section id="calculo">
+                <input id="inputPeso" type="text" placeholder="Digite seu Peso em Kg"> 
+                <input id="inputAltura" type="text" placeholder="Digite sua Altura">           
+                <button onclick="calculaIMC()">Enviar</button> 
+            </section>
+            <section id=resultadoIMC>
+                <span>IMC:</span>
+                <span id="spanIMC"></span>
+            </section>
+             
+        </section>      
+    </main>
+    <script type="text/JavaScript" src="./JS/script.js"></script> 
+</body>
+</html>
