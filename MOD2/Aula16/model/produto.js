@@ -13,8 +13,6 @@ const Produto = database.sequelize.define(
     nome: { type: Sequelize.STRING, allowNull: false },
     peso: { type: Sequelize.FLOAT, allowNull: false },
     valor: { type: Sequelize.FLOAT, allowNull: false },
-    categoria: { type: Sequelize.STRING, allowNull: false },
-    estado: { type: Sequelize.STRING, allowNull: false },
   },
   {
     freezeTableName: true,

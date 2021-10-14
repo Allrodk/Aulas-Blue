@@ -8,15 +8,19 @@ router.get("/produto", async (req, res) => {
   res.render("../views/produto", { produto: produto });
 });
 
-// app.post('/cargocriar', async (req,res) =>{
-//   const { nome, descricao, setor} = req.body;
-//   const cargo = await Cargo.create({
-//       Nome:nome,
-//       Descriçao:descricao,
-//       Setor:setor,
-//   });
-//   res.redirect("/cargo");
-// });
+router.get("/criarProduto", async (req, res) => {
+  res.render("../views/criarProduto");
+});
+
+router.post("/criarProduto", async (req, res) => {
+  const { nome, peso, valor } = req.body;
+  await Produto.create({
+    nome: nome,
+    peso: peso,
+    valor: valor,
+  });
+  res.redirect("/produto");
+});
 
 router.get("/editarProduto/:id", async (req, res) => {
   const produto = await Produto.findByPk(req.params.id);
