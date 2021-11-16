@@ -4,6 +4,7 @@ const Produto = require("../model/produto");
 
 // Lista todos os produtos do DB
 router.get("/produto", async (req, res) => {
+  await Produto.sync();
   const produto = await Produto.findAll();
   res.render("../views/produto", { produto: produto });
 });

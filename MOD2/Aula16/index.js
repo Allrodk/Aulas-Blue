@@ -12,8 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 const port = process.env.PORT;
 console.log(port);
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
   res.json({ menssagem: "Olá" });
+  
 });
 
 // app.get("/produto", async (req, res) => {
